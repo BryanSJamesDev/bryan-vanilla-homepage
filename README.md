@@ -28,7 +28,7 @@ site's creative/differentiating feature.
 
 <!-- TODO: replace with your GitHub Pages URL once deployed -->
 
-https://REPLACE_ME.github.io/REPLACE_ME/
+https://bryansjamesdev.github.io/bryan-vanilla-homepage/
 
 ## Pages
 
