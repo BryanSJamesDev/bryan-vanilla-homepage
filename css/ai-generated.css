@@ -1,0 +1,40 @@
+/* ai-generated.css: deliberately distinct visual style so this
+   AI-generated page reads as a separate "playground" from the rest of
+   the site (different type stack, warmer accent). */
+
+.ai-banner {
+  background-color: #fff4e5;
+  border: 1px solid #f0c98a;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+  color: #6b4a12;
+}
+
+:root[data-theme="dark"] .ai-banner {
+  background-color: #3a2c10;
+  border-color: #6b4a12;
+  color: #f0c98a;
+}
+
+.ai-content {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.ai-content h1 {
+  font-size: 2rem;
+}
+
+.ai-bio {
+  max-width: 65ch;
+  font-size: 1.05rem;
+}
+
+.fun-facts {
+  max-width: 60ch;
+  padding-left: 1.2rem;
+}
+
+.fun-facts li {
+  margin-bottom: var(--spacing-sm);
+}

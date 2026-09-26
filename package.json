@@ -1,0 +1,17 @@
+{
+  "name": "vanilla-homepage",
+  "version": "1.0.0",
+  "description": "Framework-free personal homepage built with HTML5, CSS3, and ES6 modules for a web development course assignment.",
+  "type": "module",
+  "author": "Bryan Samuel James",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{html,css,js,json,md}\"",
+    "lint": "eslint js/**/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0",
+    "prettier": "^3.3.3"
+  }
+}

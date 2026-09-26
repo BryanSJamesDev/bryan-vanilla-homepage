@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Playground: Bryan James</title>
+
+    <meta name="author" content="Bryan Samuel James" />
+    <meta
+      name="description"
+      content="A clearly-labeled, AI-generated companion page: an AI-written bio blurb and fun facts about Bryan James."
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/ai-generated.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary">
+        <a class="brand" href="./index.html">Bryan James</a>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./ai-generated.html" aria-current="page">AI Playground</a></li>
+          <li>
+            <a href="https://github.com/BryanSJamesDev" target="_blank" rel="noopener">GitHub</a>
+          </li>
+        </ul>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Toggle dark mode"
+        >
+          🌙
+        </button>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="ai-banner" role="note">
+        <p>
+          <strong>Heads up:</strong> the text on this page was written by an AI model (Claude), from
+          a short prompt I gave it, to satisfy the assignment's "AI-generated page" requirement. See
+          the README's "Use of Generative AI" section for the exact prompt and model.
+        </p>
+      </section>
+
+      <section class="ai-content">
+        <h1>An AI's Take on Bryan</h1>
+        <p class="ai-bio">
+          Bryan is a graduate CS student who treats every hackathon like a 24-hour puzzle box: a
+          little bit of agent orchestration here, a scrappy Chrome extension there, and a habit of
+          shipping something demoable before the coffee runs out. He moves comfortably between
+          backend data pipelines and front-end polish, which is part of why this very homepage
+          insists on hand-rolled CSS hexagons instead of a component library.
+        </p>
+
+        <h2>Fun Facts, As Guessed by an AI</h2>
+        <ul class="fun-facts">
+          <li>Probably has more GitHub repos than fully-charged devices at any given moment.</li>
+          <li>Has almost certainly explained what "MCP" stands for more than once this month.</li>
+          <li>Treats a good README the way other people treat a good resume.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="year"></span> Bryan Samuel James · Built for
+        <abbr title="Web Development coursework">class</abbr> with vanilla HTML5, CSS3 &amp; ES6
+        modules · <a href="./LICENSE">MIT License</a>
+      </p>
+    </footer>
+  </body>
+</html>

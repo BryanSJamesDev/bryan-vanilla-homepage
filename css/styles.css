@@ -1,0 +1,262 @@
+/* ==========================================================================
+   Bryan James: Homepage styles
+   Organized sections: variables, reset, layout, header, hero, honeycomb,
+   footer, responsive, dark theme.
+   ========================================================================== */
+
+:root {
+  --color-bg: #f7f7fb;
+  --color-surface: #ffffff;
+  --color-text: #1b1b2f;
+  --color-muted: #5b5b73;
+  --color-accent: #3a5bff;
+  --color-accent-dark: #22389e;
+  --color-border: #e1e1ec;
+  --radius-md: 10px;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  --font-base: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #14141f;
+  --color-surface: #1c1c2c;
+  --color-text: #eeeef5;
+  --color-muted: #a3a3bd;
+  --color-accent: #7d97ff;
+  --color-accent-dark: #aebcff;
+  --color-border: #2c2c40;
+}
+
+/* ---------- Reset ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+/* ---------- Header / Nav ---------- */
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--spacing-md) var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+}
+
+.brand {
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--color-text);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-lg);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible,
+.nav-links a[aria-current="page"] {
+  color: var(--color-accent);
+}
+
+.theme-toggle {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  border-radius: 999px;
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  border-color: var(--color-accent);
+}
+
+/* ---------- Layout ---------- */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+section {
+  padding: var(--spacing-xl) 0;
+}
+
+section + section {
+  border-top: 1px solid var(--color-border);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center;
+  padding-top: var(--spacing-xl);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: var(--spacing-sm);
+}
+
+.hero-subtitle {
+  color: var(--color-muted);
+  max-width: 42rem;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.hero-meta {
+  margin-top: var(--spacing-md);
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+/* ---------- About ---------- */
+.about h2,
+.projects-grid-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.about p {
+  max-width: 65ch;
+}
+
+/* ---------- Honeycomb grid ----------
+   Technique: flexbox rows of clip-path hexagons, alternating rows
+   offset with negative top margin so they interlock. */
+.grid-hint {
+  color: var(--color-muted);
+  margin-top: 0;
+}
+
+.honeycomb {
+  list-style: none;
+  margin: var(--spacing-lg) 0 var(--spacing-md);
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem 0.6rem;
+}
+
+.hex-item {
+  width: 160px;
+}
+
+.hex-item:nth-child(even) {
+  margin-top: 3.2rem;
+}
+
+.hex {
+  display: block;
+  width: 160px;
+  height: 184px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background: linear-gradient(160deg, var(--color-accent), var(--color-accent-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md);
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+
+.hex:hover,
+.hex:focus-visible {
+  transform: scale(1.06);
+  outline: none;
+}
+
+.hex img {
+  width: 56%;
+  filter: brightness(0) invert(1);
+}
+
+.hex-caption {
+  text-align: center;
+  min-height: 1.5rem;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  padding: var(--spacing-lg);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: var(--color-muted);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    gap: var(--spacing-md);
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hex-item,
+  .hex {
+    width: 130px;
+    height: 150px;
+  }
+
+  .hex-item:nth-child(even) {
+    margin-top: 2.4rem;
+  }
+}

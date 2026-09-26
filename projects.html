@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects: Bryan James</title>
+
+    <meta name="author" content="Bryan Samuel James" />
+    <meta
+      name="description"
+      content="A closer look at Bryan James's software projects: AI agents, data pipelines, hackathon builds, and full-stack applications."
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary">
+        <a class="brand" href="./index.html">Bryan James</a>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./projects.html" aria-current="page">Projects</a></li>
+          <li><a href="./ai-generated.html">AI Playground</a></li>
+          <li>
+            <a href="https://github.com/BryanSJamesDev" target="_blank" rel="noopener">GitHub</a>
+          </li>
+        </ul>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Toggle dark mode"
+        >
+          🌙
+        </button>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="projects-intro">
+        <h1>Projects</h1>
+        <p>
+          A selection of hackathon builds, coursework, and portfolio projects. Each card links to
+          its source on GitHub.
+        </p>
+      </section>
+
+      <section class="project-cards" aria-label="Project list">
+        <article class="project-card">
+          <img
+            src="./images/hex-agentfirst.svg"
+            alt="AgentFirst project mark: a letter A on a blue hexagon"
+            class="project-card__icon"
+          />
+          <h2>AgentFirst</h2>
+          <p>
+            An MCP-based AI agent platform built with React and TypeScript, used to demonstrate
+            agent-tool orchestration patterns.
+          </p>
+          <a
+            class="project-card__link"
+            href="https://github.com/BryanSJamesDev/agentfirst"
+            target="_blank"
+            rel="noopener"
+          >
+            View on GitHub
+          </a>
+        </article>
+
+        <article class="project-card">
+          <img
+            src="./images/hex-oms.svg"
+            alt="Order Management System project mark: a letter O on a blue hexagon"
+            class="project-card__icon"
+          />
+          <h2>Order Management System</h2>
+          <p>
+            A real-time order tracking and demand-forecasting platform built as a full-stack
+            portfolio project.
+          </p>
+          <a
+            class="project-card__link"
+            href="https://github.com/BryanSJamesDev/order-management-system"
+            target="_blank"
+            rel="noopener"
+          >
+            View on GitHub
+          </a>
+        </article>
+
+        <article class="project-card">
+          <img
+            src="./images/hex-contractguard.svg"
+            alt="Contract Guard project mark: a letter C on a blue hexagon"
+            class="project-card__icon"
+          />
+          <h2>Contract Guard</h2>
+          <p>
+            A schema-enforced data validation pipeline that catches malformed contract data before
+            it reaches downstream systems.
+          </p>
+          <a
+            class="project-card__link"
+            href="https://github.com/BryanSJamesDev/contract-guard"
+            target="_blank"
+            rel="noopener"
+          >
+            View on GitHub
+          </a>
+        </article>
+
+        <article class="project-card">
+          <img
+            src="./images/hex-parity.svg"
+            alt="Parity Agent project mark: a letter P on a blue hexagon"
+            class="project-card__icon"
+          />
+          <h2>Parity Agent</h2>
+          <p>
+            A personalized and dynamic pricing detector built at the Agent Harness Hackathon using
+            an agent harness and web-data tooling.
+          </p>
+          <a
+            class="project-card__link"
+            href="https://github.com/BryanSJamesDev/parity-agent"
+            target="_blank"
+            rel="noopener"
+          >
+            View on GitHub
+          </a>
+        </article>
+
+        <article class="project-card">
+          <img
+            src="./images/hex-capture.svg"
+            alt="Capture and Memory project mark: a letter M on a blue hexagon"
+            class="project-card__icon"
+          />
+          <h2>Capture + Memory</h2>
+          <p>
+            A Chrome extension paired with a structured-memory pipeline, built at a hackathon to
+            capture and organize browsing context.
+          </p>
+          <a
+            class="project-card__link"
+            href="https://github.com/BryanSJamesDev/capture-memory"
+            target="_blank"
+            rel="noopener"
+          >
+            View on GitHub
+          </a>
+        </article>
+
+        <article class="project-card">
+          <img
+            src="./images/hex-robot.svg"
+            alt="Robot perception pipeline project mark: a letter R on a blue hexagon"
+            class="project-card__icon"
+          />
+          <h2>Robot Perception Pipeline</h2>
+          <p>
+            A perception-to-action pipeline for a robot, built at the Physical AI Sprint Hackathon.
+          </p>
+          <a
+            class="project-card__link"
+            href="https://github.com/BryanSJamesDev/robot-perception-action-pipeline"
+            target="_blank"
+            rel="noopener"
+          >
+            View on GitHub
+          </a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="year"></span> Bryan Samuel James · Built for
+        <abbr title="Web Development coursework">class</abbr> with vanilla HTML5, CSS3 &amp; ES6
+        modules · <a href="./LICENSE">MIT License</a>
+      </p>
+    </footer>
+  </body>
+</html>

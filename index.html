@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bryan James: MSCS Student &amp; Software Engineer</title>
+
+    <meta name="author" content="Bryan Samuel James" />
+    <meta
+      name="description"
+      content="Homepage of Bryan James, an MSCS student at Northeastern University's Khoury College, showcasing projects in AI agents, full-stack development, and data pipelines."
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary">
+        <a class="brand" href="./index.html">Bryan James</a>
+        <ul class="nav-links">
+          <li><a href="./index.html" aria-current="page">Home</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./ai-generated.html">AI Playground</a></li>
+          <li>
+            <a href="https://github.com/BryanSJamesDev" target="_blank" rel="noopener">GitHub</a>
+          </li>
+        </ul>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Toggle dark mode"
+        >
+          🌙
+        </button>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <h1 id="hero-greeting">Hi, I'm Bryan.</h1>
+        <p class="hero-subtitle">
+          MSCS student at Northeastern's Khoury College, building AI agents, data pipelines, and
+          full-stack tools.
+        </p>
+        <p class="hero-meta" id="visit-counter" aria-live="polite"></p>
+      </section>
+
+      <section class="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About This Page</h2>
+        <p>
+          I'm a graduate student studying Computer Science, with a background in IT and software
+          engineering internships and a published book chapter on machine learning applications in
+          healthcare. This page is a hand-built, framework-free front end: plain HTML5, CSS3 and ES6
+          modules, no libraries. Below is a honeycomb grid of a few projects I've worked on: hover
+          or focus a hex to see what it does, and click through to the repository.
+        </p>
+      </section>
+
+      <section class="projects-grid-section" aria-labelledby="grid-heading">
+        <h2 id="grid-heading">Project Honeycomb</h2>
+        <p class="grid-hint">Hover or tab through the hexagons to explore each project.</p>
+
+        <ul class="honeycomb" id="honeycomb">
+          <li class="hex-item">
+            <a
+              class="hex"
+              href="https://github.com/BryanSJamesDev/agentfirst"
+              target="_blank"
+              rel="noopener"
+              data-title="AgentFirst"
+              data-desc="MCP-based AI agent platform built with React and TypeScript."
+            >
+              <img src="./images/hex-agentfirst.svg" alt="AgentFirst project icon" />
+            </a>
+          </li>
+          <li class="hex-item">
+            <a
+              class="hex"
+              href="https://github.com/BryanSJamesDev/order-management-system"
+              target="_blank"
+              rel="noopener"
+              data-title="Order Management System"
+              data-desc="Real-time order tracking and demand forecasting platform."
+            >
+              <img src="./images/hex-oms.svg" alt="Order Management System project icon" />
+            </a>
+          </li>
+          <li class="hex-item">
+            <a
+              class="hex"
+              href="https://github.com/BryanSJamesDev/contract-guard"
+              target="_blank"
+              rel="noopener"
+              data-title="Contract Guard"
+              data-desc="Schema-enforced data validation pipeline for contract data."
+            >
+              <img src="./images/hex-contractguard.svg" alt="Contract Guard project icon" />
+            </a>
+          </li>
+          <li class="hex-item">
+            <a
+              class="hex"
+              href="https://github.com/BryanSJamesDev/parity-agent"
+              target="_blank"
+              rel="noopener"
+              data-title="Parity Agent"
+              data-desc="Dynamic and personalized pricing detector, built at the Agent Harness Hackathon."
+            >
+              <img src="./images/hex-parity.svg" alt="Parity Agent project icon" />
+            </a>
+          </li>
+          <li class="hex-item">
+            <a
+              class="hex"
+              href="https://github.com/BryanSJamesDev/capture-memory"
+              target="_blank"
+              rel="noopener"
+              data-title="Capture + Memory"
+              data-desc="Chrome extension and structured-memory pipeline built at a hackathon."
+            >
+              <img src="./images/hex-capture.svg" alt="Capture and Memory project icon" />
+            </a>
+          </li>
+          <li class="hex-item">
+            <a
+              class="hex"
+              href="https://github.com/BryanSJamesDev/robot-perception-action-pipeline"
+              target="_blank"
+              rel="noopener"
+              data-title="Robot Perception Pipeline"
+              data-desc="Perception-to-action robotics pipeline from the Physical AI Sprint Hackathon."
+            >
+              <img src="./images/hex-robot.svg" alt="Robot perception pipeline project icon" />
+            </a>
+          </li>
+        </ul>
+
+        <p class="hex-caption" id="hex-caption" aria-live="polite">
+          Hover or focus a hexagon to read about the project.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="year"></span> Bryan Samuel James · Built for
+        <abbr title="Web Development coursework">class</abbr> with vanilla HTML5, CSS3 &amp; ES6
+        modules · <a href="./LICENSE">MIT License</a>
+      </p>
+    </footer>
+  </body>
+</html>
