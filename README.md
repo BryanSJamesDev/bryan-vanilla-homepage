@@ -8,7 +8,7 @@ Bryan Samuel James, [github.com/BryanSJamesDev](https://github.com/BryanSJamesDe
 
 <!-- TODO: replace with your actual Canvas/course page URL -->
 
-[Course page](https://northeastern.instructure.com/courses/REPLACE_ME)
+[Course page](https://northeastern.instructure.com/courses/261032)
 
 ## Project Objective
 
