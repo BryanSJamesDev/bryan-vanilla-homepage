@@ -1,4 +1,4 @@
-# Bryan James: Vanilla Homepage
+# Bryan Samuel James: Vanilla Homepage
 
 ## Author
 
