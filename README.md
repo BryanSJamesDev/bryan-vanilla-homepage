@@ -8,7 +8,7 @@ Bryan Samuel James, [github.com/BryanSJamesDev](https://github.com/BryanSJamesDe
 
 <!-- TODO: replace with your actual Canvas/course page URL -->
 
-[Course page](https://northeastern.instructure.com/courses/261032)
+[Course page](https://northeastern.instructure.com/courses/REPLACE_ME)
 
 ## Project Objective
 
@@ -28,7 +28,7 @@ site's creative/differentiating feature.
 
 <!-- TODO: replace with your GitHub Pages URL once deployed -->
 
-https://bryansjamesdev.github.io/bryan-vanilla-homepage/
+https://REPLACE_ME.github.io/REPLACE_ME/
 
 ## Pages
 
