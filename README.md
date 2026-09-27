@@ -22,7 +22,7 @@ site's creative/differentiating feature.
 
 <!-- TODO: replace with a real screenshot once deployed, e.g. images/screenshot.png -->
 
-![Homepage screenshot placeholder](./images/screenshot-placeholder.png)
+![Homepage screenshot placeholder](./images/screenshot.png)
 
 ## Live Site
 
