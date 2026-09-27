@@ -6,8 +6,6 @@ Bryan Samuel James, [github.com/BryanSJamesDev](https://github.com/BryanSJamesDe
 
 ## Class Link
 
-<!-- TODO: replace with your actual Canvas/course page URL -->
-
 [Course page](https://northeastern.instructure.com/courses/261032)
 
 ## Project Objective
@@ -20,13 +18,9 @@ site's creative/differentiating feature.
 
 ## Screenshot
 
-<!-- TODO: replace with a real screenshot once deployed, e.g. images/screenshot.png -->
-
 ![Homepage screenshot placeholder](./images/screenshot.png)
 
 ## Live Site
-
-<!-- TODO: replace with your GitHub Pages URL once deployed -->
 
 https://bryansjamesdev.github.io/bryan-vanilla-homepage/
 
@@ -66,7 +60,7 @@ No build step is required, this is a static site.
 1. Clone the repo:
    ```bash
    git clone https://github.com/BryanSJamesDev/bryan-vanilla-homepage.git
-   cd REPLACE_ME
+   cd bryan-vanilla-homepage
    ```
 2. Install dev dependencies (Prettier + ESLint, used only for linting/formatting):
    ```bash
