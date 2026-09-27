@@ -18,7 +18,7 @@ site's creative/differentiating feature.
 
 ## Screenshot
 
-![Homepage screenshot placeholder](./images/screenshot.png)
+![Bryan Samuel James homepage screenshot](./images/screenshot.png)
 
 ## Live Site
 
