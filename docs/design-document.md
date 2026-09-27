@@ -1,4 +1,4 @@
-# Design Document: Bryan James Homepage
+# Design Document: Bryan Samuel James Homepage
 
 ## 1. Project Description
 
@@ -85,7 +85,7 @@ detail per project, and a clearly labeled AI-generated companion page.
 
 > As a classmate deciding who to team up with for the next hackathon, I open
 > Bryan's Projects page and scan the six cards. I notice two hackathon
-> builds (Parity Agent, Capture + Memory) that match the kind of fast,
+> builds (Parity Agent, Triage Control) that match the kind of fast,
 > scrappy projects I enjoy. I click through to the GitHub repos, skim the
 > READMEs, and message Bryan to team up: the Projects page gave me enough
 > signal to make that call without a phone screen.
