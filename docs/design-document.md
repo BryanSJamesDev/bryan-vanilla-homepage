@@ -107,7 +107,9 @@ Low-fidelity wireframes for the three pages are in this folder:
 - `wireframe-projects.svg`: Projects page, nav, intro, responsive card grid
 - `wireframe-ai-page.svg`: AI Playground page, nav, AI-disclosure banner, bio content
 
-Color and type direction: a cool blue accent (`#3a5bff` light / `#7d97ff`
-dark) on a neutral gray background for the main site, with a distinct warm
-amber banner and serif type on the AI-generated page so it visually reads as
-a separate "voice" from the hand-authored pages.
+Color and type direction: a cool blue, teal and purple accent palette
+(`#3a5bff`, `#1fb6a8`, `#a259ff` light / `#7d97ff`, `#4fd8ca`, `#c299ff`
+dark) rotating across the honeycomb and project cards on a neutral gray
+background for the main site, with a distinct warm amber banner and serif
+type on the AI-generated page so it visually reads as a separate "voice"
+from the hand-authored pages.
