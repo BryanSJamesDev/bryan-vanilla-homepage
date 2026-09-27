@@ -65,7 +65,7 @@ No build step is required, this is a static site.
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/REPLACE_ME/REPLACE_ME.git
+   git clone https://github.com/BryanSJamesDev/bryan-vanilla-homepage.git
    cd REPLACE_ME
    ```
 2. Install dev dependencies (Prettier + ESLint, used only for linting/formatting):
