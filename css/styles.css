@@ -11,6 +11,10 @@
   --color-muted: #5b5b73;
   --color-accent: #3a5bff;
   --color-accent-dark: #22389e;
+  --color-accent-2: #1fb6a8;
+  --color-accent-2-dark: #0f7d73;
+  --color-accent-3: #a259ff;
+  --color-accent-3-dark: #6a2fc9;
   --color-border: #e1e1ec;
   --radius-md: 10px;
   --spacing-sm: 0.5rem;
@@ -27,6 +31,10 @@
   --color-muted: #a3a3bd;
   --color-accent: #7d97ff;
   --color-accent-dark: #aebcff;
+  --color-accent-2: #4fd8ca;
+  --color-accent-2-dark: #1f9b8f;
+  --color-accent-3: #c299ff;
+  --color-accent-3-dark: #8f5fe0;
   --color-border: #2c2c40;
 }
 
@@ -162,8 +170,42 @@ section + section {
   margin-bottom: var(--spacing-md);
 }
 
-.about p {
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1 1 380px;
   max-width: 65ch;
+}
+
+.about-facts {
+  flex: 0 1 260px;
+  margin: 0;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.about-facts dt {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+  margin-top: var(--spacing-md);
+}
+
+.about-facts dt:first-child {
+  margin-top: 0;
+}
+
+.about-facts dd {
+  margin: 0.2rem 0 0;
 }
 
 /* ---------- Honeycomb grid ----------
@@ -193,17 +235,26 @@ section + section {
 }
 
 .hex {
-  display: block;
+  display: flex;
   width: 160px;
   height: 184px;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   background: linear-gradient(160deg, var(--color-accent), var(--color-accent-dark));
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: var(--spacing-md);
   text-decoration: none;
   transition: transform 0.15s ease;
+}
+
+/* Rotate through three accent colors so the honeycomb reads as a deliberate
+   palette instead of one flat color repeated six times. */
+.hex-item:nth-child(3n + 2) .hex {
+  background: linear-gradient(160deg, var(--color-accent-2), var(--color-accent-2-dark));
+}
+
+.hex-item:nth-child(3n + 3) .hex {
+  background: linear-gradient(160deg, var(--color-accent-3), var(--color-accent-3-dark));
 }
 
 .hex:hover,
@@ -258,5 +309,9 @@ section + section {
 
   .hex-item:nth-child(even) {
     margin-top: 2.4rem;
+  }
+
+  .about-facts {
+    flex-basis: 100%;
   }
 }
