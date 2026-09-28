@@ -6,7 +6,7 @@ Bryan Samuel James, [github.com/BryanSJamesDev](https://github.com/BryanSJamesDe
 
 ## Class Link
 
-[Course page](https://northeastern.instructure.com/courses/261032)
+[Course page](https://johnguerra.co/classes/webDevelopment_online_fall_2026/index.html)
 
 ## Project Objective
 
